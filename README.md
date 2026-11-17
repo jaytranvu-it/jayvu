@@ -21,3 +21,7 @@ Static HTML/CSS/JS for GitHub Pages at `https://jaytranvu-it.github.io/jayvu/`.
 - Google Fonts requires an internet connection; system fonts are fallbacks.
 
 No build step, framework or paid hosting required.
+
+
+## Homepage v2
+Redesigned EN/VI homepages, with conceptual SVG project illustrations in `assets/visuals/` and replaceable portrait/lifestyle placeholders. Keep the folder structure intact when uploading via GitHub Desktop. All project illustrations are conceptual and not real screenshots.
