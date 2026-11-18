@@ -41,3 +41,31 @@
  .lr-panel{scroll-margin-top:78px}
 }
 @media(prefers-reduced-motion:reduce){.lr-marker,.lr-milestone{transition:none!important}}
+
+
+/* Life Road v4.4 — panoramic single-screen journey */
+.stories-page .lr-section{padding:46px 0 75px}
+.lr-intro{margin-bottom:18px}
+.lr-intro h2{font-size:clamp(1.8rem,3vw,2.8rem)}
+.lr-intro p{margin-bottom:0}
+.lr-layout{display:flex;flex-direction:column;gap:18px;max-width:1360px}
+.lr-landscape,.lr-aside{width:100%;min-width:0}
+.lr-road{width:100%;aspect-ratio:3/1;overflow:hidden;background:#f8f6f2;border-radius:15px}
+.lr-art{width:100%;height:100%;object-fit:fill}
+.lr-marker,.lr-milestone{left:var(--x);top:var(--pos)}
+.lr-marker{width:clamp(25px,2.5vw,39px);height:clamp(25px,2.5vw,39px);font-size:clamp(9px,1vw,13px);box-shadow:0 2px 10px #162c4670}
+.lr-marker-label{display:none}
+.lr-milestone{max-width:none;font-size:clamp(8px,.75vw,11px);padding:4px 7px;white-space:nowrap;transform:translate(-50%,-50%)}
+.lr-aside{position:static;max-height:none;overflow:visible;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:16px}
+.lr-panel{padding:20px 26px;display:grid;grid-template-columns:minmax(190px,.65fr) minmax(0,1.35fr);column-gap:28px;align-items:start}
+.lr-kicker,.lr-panel h3,.lr-meta,.lr-controls{grid-column:1}
+.lr-panel h3{font-size:clamp(1.3rem,2vw,1.9rem);margin:8px 0}
+.lr-body{grid-column:2;grid-row:1 / span 4;font-size:14px;line-height:1.7;margin:0;align-self:center}
+.lr-controls{margin-top:12px}
+.lr-nav{margin:0;display:grid;grid-template-columns:repeat(4,auto);gap:6px}
+.lr-nav button{padding:9px 10px}
+.lr-hero-art{max-height:260px;min-height:180px}
+.lr-hero-art img{object-fit:cover;object-position:center}
+@media(max-width:980px){.lr-aside{display:block}.lr-panel{display:block}.lr-body{margin-top:14px}.lr-nav{display:flex;margin:12px 0}.lr-milestone{font-size:8px}}
+@media(max-width:760px){.stories-page .lr-section{padding:36px 0 65px}.lr-layout{gap:12px}.lr-road{aspect-ratio:3/1;overflow:visible}.lr-marker{width:25px;height:25px;font-size:9px;border-width:1px}.lr-milestone{display:none}.lr-panel{padding:18px}.lr-panel h3{font-size:1.45rem}.lr-body{font-size:14px}.lr-nav{justify-content:space-between;gap:4px}.lr-nav button{padding:8px 9px;font-size:12px}.lr-intro p{font-size:14px}}
+@media(max-width:420px){.lr-marker{width:22px;height:22px}.lr-nav button{padding:7px}}
