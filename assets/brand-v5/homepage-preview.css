@@ -1,0 +1,24 @@
+
+/* JAY VU. v5.0 — Homepage preview only; no styles for other pages changed */
+:root{--brand-ink:#162C46;--brand-ivory:#F8F6F2;--brand-blue:#2563EB;--brand-mist:#7899BE;--brand-earth:#AD9270}
+body.homepage.brand-v5-preview{background:var(--brand-ivory);color:var(--brand-ink)}
+.brand-v5-preview .header{background:rgba(248,246,242,.96);border-bottom:1px solid rgba(22,44,70,.14)}
+.brand-v5-preview .brand{display:inline-flex;align-items:center;gap:7px}
+.brand-v5-preview .brand .bird-icon{width:35px;height:23px;object-fit:contain}
+.brand-v5-preview .hp-hero{background:var(--brand-ivory);overflow:hidden}
+.brand-v5-preview .hp-hero-grid{align-items:center;min-height:610px}
+.brand-v5-preview .hp-hero-visual{position:relative;min-height:430px;display:flex;align-items:center;justify-content:center}
+.brand-v5-preview .brand-hero-art{display:block;width:100%;height:440px;object-fit:cover;object-position:70% center;border-radius:18px;border:1px solid rgba(22,44,70,.12);box-shadow:0 18px 50px rgba(22,44,70,.08)}
+.brand-v5-preview .hp-hero-visual .hp-floating-card{z-index:2}
+.brand-v5-preview .hp-hero-copy h1{letter-spacing:-.045em}
+.brand-v5-preview .hp-hero-copy h1 span{color:#53708C}
+.brand-v5-preview .hp-project{background:#fffdf9;border:1px solid rgba(22,44,70,.13)}
+.brand-v5-preview .hp-snapshot,.brand-v5-preview .hp-process,.brand-v5-preview .hp-personal{background:#f3f1ed}
+.brand-v5-preview .hp-story{background:#e8eef2}
+.brand-v5-preview .brand-editorial-band{background:#F8F6F2;padding:30px 0 0}
+.brand-v5-preview .brand-editorial-band .wrap{display:flex;align-items:center;gap:25px;border-top:1px solid #c7d1d8;padding-top:25px}
+.brand-v5-preview .brand-editorial-band img{width:145px;height:82px;object-fit:contain}
+.brand-v5-preview .brand-editorial-band p{margin:0;font-family:Georgia,serif;font-size:clamp(19px,2.3vw,28px);font-style:italic;color:#162C46}
+.brand-v5-preview a:focus-visible,.brand-v5-preview button:focus-visible{outline:3px solid #2563EB;outline-offset:4px}
+@media(max-width:800px){.brand-v5-preview .hp-hero-grid{min-height:auto}.brand-v5-preview .hp-hero-visual{min-height:240px}.brand-v5-preview .brand-hero-art{height:300px}.brand-v5-preview .brand-editorial-band .wrap{gap:10px}.brand-v5-preview .brand-editorial-band img{width:85px}}
+@media(prefers-reduced-motion:reduce){.brand-v5-preview *{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
