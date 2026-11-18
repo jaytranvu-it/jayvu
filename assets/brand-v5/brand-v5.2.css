@@ -1,0 +1,64 @@
+/* JAY VU. v5.2 — consolidated editorial brand layer. Source: v5.1.1. */
+:root{--brand-ink:#162C46;--brand-body:#30465D;--brand-secondary:#48617A;--brand-ivory:#F8F6F2;--brand-blue:#2563EB;--brand-link:#1D4ED8;--brand-mist:#7899BE;--brand-earth:#AD9270;--brand-line:#D6DFE6;--brand-white:#FFFFFF}
+body.brand-v5,body.brand-v5-preview{background:var(--brand-ivory);color:var(--brand-body)}
+body.brand-v5 :is(h1,h2,h3),body.brand-v5-preview :is(h1,h2,h3){color:var(--brand-ink)}
+body.brand-v5 :is(.lead,.sectionhead p,.muted,.card p,.timeline-item p,.lr-body,.lr-meta,.lr-note),body.brand-v5-preview :is(.hp-lead,.hp-section-heading p,.hp-personal-copy p){color:var(--brand-secondary)}
+body.brand-v5 :is(.prose p,.article p,.card p,.intro p),body.brand-v5-preview :is(.hp-lead,.hp-personal-copy p,.hp-story-layout p){line-height:1.8}
+body.brand-v5 :is(.eyebrow,.tag,.toplink),body.brand-v5-preview .hp-label{color:var(--brand-link)}
+body.brand-v5 .header,body.brand-v5-preview .header{background:rgba(248,246,242,.97);border-bottom:1px solid var(--brand-line)}
+body.brand-v5 .brand,body.brand-v5-preview .brand{display:inline-flex;align-items:center;gap:8px}
+body.brand-v5 .brand .bird-icon,body.brand-v5-preview .brand .bird-icon{display:block;width:34px;height:24px;flex-shrink:0;object-fit:contain}
+body.brand-v5 .navlinks a,body.brand-v5-preview .navlinks a{font-size:max(.82rem,13px)}
+body.brand-v5 .lang,body.brand-v5-preview .lang{font-size:max(.8rem,13px)}
+body.brand-v5 .hero{background:var(--brand-ivory)}
+body.brand-v5 .brand-page-hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(24px,4vw,72px);align-items:center}
+body.brand-v5 .brand-page-hero-grid>.content{min-width:0}
+body.brand-v5 .brand-page-illustration{margin:0;min-width:0;border:1px solid var(--brand-line);border-radius:16px;background:var(--brand-ivory);overflow:hidden;box-shadow:none}
+body.brand-v5 .brand-page-illustration img{display:block;width:100%;height:auto;aspect-ratio:9/5.6;object-fit:contain}
+body.brand-v5-preview .brand-hero-art{border-color:var(--brand-line);box-shadow:none}
+body.brand-v5 :is(.card,.sj-essay,.lr-panel),body.brand-v5-preview .hp-project{border-color:var(--brand-line);box-shadow:none}
+body.brand-v5 :is(.section,.sj-section),body.brand-v5-preview .hp-section{scroll-margin-top:88px}
+body.brand-v5 :is(.btn,.sj-story-controls button,.lr-controls button),body.brand-v5-preview .btn{min-height:44px}
+body.brand-v5 .btn:not(.secondary),body.brand-v5-preview .btn:not(.secondary){background:var(--brand-ink);color:#fff}
+body.brand-v5 .btn:not(.secondary):hover,body.brand-v5-preview .btn:not(.secondary):hover{background:#1D4ED8;color:#fff}
+body.brand-v5 .btn.secondary,body.brand-v5-preview .btn.secondary{color:var(--brand-ink);border-color:#9FB0C0}
+body.brand-v5 .footer,body.brand-v5-preview .footer{background:var(--brand-ink);color:#DCE7F3}
+body.brand-v5 .footer :is(p,.brand,a),body.brand-v5-preview .footer :is(p,.brand,a){color:#F0F5FB}
+body.brand-v5 .footer a:hover,body.brand-v5-preview .footer a:hover{color:#BFD5FF}
+body.brand-v5 .footer .copyright,body.brand-v5-preview .footer .copyright{color:#C4D4E5}
+body.brand-v5 .sj-closing{background:var(--brand-ink);color:#fff}
+body.brand-v5 .sj-closing p{color:#fff}
+body.brand-v5 .sj-closing strong{color:#DCE7F3}
+body.brand-v5-preview .hp-snapshot,body.brand-v5-preview .hp-career{color:#fff}
+body.brand-v5-preview .hp-snapshot h2,body.brand-v5-preview .hp-career h2{color:#fff}
+body.brand-v5-preview .hp-snapshot .hp-label,body.brand-v5-preview .hp-career .hp-label{color:#BFD5FF}
+body.brand-v5-preview .hp-photo :is(span,strong){color:#fff}
+body.brand-v5-preview .hp-photo-note{display:none}
+body.brand-v5-preview .hp-personal-visual{min-width:0}
+body.brand-v5-preview .homepage,body.brand-v5-preview.homepage{background:var(--brand-ivory)}
+body.brand-v5-preview .hp-hero{background:radial-gradient(circle at 77% 27%,#E4EBF2 0,transparent 44%),var(--brand-ivory)}
+body.brand-v5-preview .hp-contact{background:#E9EFF4}
+body.brand-v5-preview .hp-project-section,body.brand-v5-preview .hp-story{background:#fff}
+body.brand-v5-preview .hp-label{font-size:max(.76rem,12px)}
+body.brand-v5-preview .hp-eyebrow{color:var(--brand-secondary)}
+body.brand-v5 .brand-stories-hero{background:var(--brand-ivory)}
+body.brand-v5 .brand-stories-hero .wrap{position:relative}
+body.brand-v5 .brand-stories-bird{position:absolute;right:1.5%;top:0;width:clamp(64px,10vw,140px);height:auto;opacity:.65;pointer-events:none}
+body.brand-v5.stories-page .sj-hero.brand-stories-hero{background:var(--brand-ivory);color:var(--brand-body)}
+body.brand-v5.stories-page .sj-hero.brand-stories-hero h1{color:var(--brand-ink)}
+body.brand-v5.stories-page .sj-hero.brand-stories-hero .sj-hero-lead{color:var(--brand-body)}
+body.brand-v5.stories-page .sj-hero.brand-stories-hero .eyebrow{color:var(--brand-secondary)}
+body.brand-v5.stories-page .sj-hero.brand-stories-hero .sj-cta{color:var(--brand-link);border-bottom-color:var(--brand-link)}
+body.brand-v5.stories-page .sj-hero.brand-stories-hero .sj-cta:hover{color:var(--brand-ink);border-bottom-color:var(--brand-ink)}
+body.brand-v5 .sj-road-artwork,body.brand-v5 .life-road-artwork{border-radius:14px}
+body.brand-v5 .lr-body{font-size:1rem;line-height:1.75}
+body.brand-v5 .lr-note{font-size:.8125rem}
+body.brand-v5 .lr-controls button:disabled{opacity:.55}
+body.brand-v5 .lr-marker{border:2px solid #fff}
+body.brand-v5 :is(a,button,[tabindex]):focus-visible,body.brand-v5-preview :is(a,button,[tabindex]):focus-visible{outline:3px solid #1D4ED8;outline-offset:4px}
+body.brand-v5 .footer :is(a,button):focus-visible,body.brand-v5-preview .footer :is(a,button):focus-visible{outline-color:#BFD5FF}
+body.brand-v5 :is(.lr-nav button,.lr-controls button){min-width:42px;min-height:44px}
+@media(max-width:850px){body.brand-v5 .brand-page-hero-grid{grid-template-columns:1fr;gap:24px}body.brand-v5 .brand-page-illustration{max-width:760px}body.brand-v5 .brand-stories-bird{opacity:.25;top:8px}}
+@media(max-width:760px){body.brand-v5 .lr-marker{min-width:25px;min-height:25px}body.brand-v5 .lr-nav{justify-content:flex-start;gap:8px}body.brand-v5 .lr-nav button{min-width:44px;min-height:44px}body.brand-v5 .brand-page-hero-grid{gap:20px}body.brand-v5-preview .hp-hero-grid{gap:25px}body.brand-v5 .sj-hero{padding:60px 0}body.brand-v5 .sj-hero h1{font-size:clamp(2.5rem,9vw,4rem)}}
+@media(max-width:500px){body.brand-v5 .brand-page-illustration{border-radius:12px}body.brand-v5 .brand-stories-bird{width:70px}}
+@media(prefers-reduced-motion:reduce){body.brand-v5 *,body.brand-v5-preview *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}

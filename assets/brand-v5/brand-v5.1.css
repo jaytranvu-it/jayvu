@@ -1,0 +1,42 @@
+/* JAY VU. Brand v5.1 — shared typography, color hierarchy, and interaction polish. */
+:root{--brand-ink:#162C46;--brand-body:#30465D;--brand-secondary:#48617A;--brand-ivory:#F8F6F2;--brand-blue:#2563EB;--brand-link:#1D4ED8;--brand-mist:#7899BE;--brand-earth:#AD9270;--brand-line:#D6DFE6}
+body.brand-v5,body.brand-v5-preview{background:var(--brand-ivory);color:var(--brand-body)}
+body.brand-v5 h1,body.brand-v5 h2,body.brand-v5 h3,body.brand-v5-preview h1,body.brand-v5-preview h2,body.brand-v5-preview h3{color:var(--brand-ink)}
+body.brand-v5 p,body.brand-v5-preview p{color:var(--brand-body)}
+body.brand-v5 .lead,body.brand-v5 .sectionhead p,body.brand-v5 .muted,body.brand-v5 .card p,body.brand-v5 .timeline-item p,body.brand-v5 .lr-body,body.brand-v5 .lr-meta,body.brand-v5 .lr-note,body.brand-v5-preview .hp-lead,body.brand-v5-preview .hp-section-heading p,body.brand-v5-preview .hp-personal-copy p{color:var(--brand-secondary)}
+body.brand-v5 .eyebrow,body.brand-v5-preview .hp-label{color:var(--brand-link)}
+body.brand-v5 a:not(.btn):not(.brand):hover,body.brand-v5-preview a:not(.btn):not(.brand):hover{color:var(--brand-link)}
+body.brand-v5 .header,body.brand-v5-preview .header{background:rgba(248,246,242,.97);border-bottom:1px solid var(--brand-line)}
+body.brand-v5 .brand,body.brand-v5-preview .brand{display:inline-flex;align-items:center;gap:8px}
+body.brand-v5 .brand .bird-icon,body.brand-v5-preview .brand .bird-icon{display:block;width:34px;height:24px;flex-shrink:0;object-fit:contain}
+body.brand-v5 .brand-page-illustration{border-color:var(--brand-line);box-shadow:0 8px 25px rgba(22,44,70,.035)}
+body.brand-v5-preview .brand-hero-art{border-color:var(--brand-line);box-shadow:0 10px 28px rgba(22,44,70,.055)}
+body.brand-v5 .card,body.brand-v5-preview .hp-project{border-color:var(--brand-line);box-shadow:none}
+body.brand-v5 .btn,body.brand-v5-preview .btn{min-height:44px}
+body.brand-v5 .navlinks a,body.brand-v5-preview .navlinks a{font-size:max(.82rem,13px)}
+body.brand-v5 .lang,body.brand-v5-preview .lang{font-size:max(.8rem,13px)}
+body.brand-v5 .footer p,body.brand-v5-preview .footer p{color:#DCE7F3}
+body.brand-v5 .footer a,body.brand-v5-preview .footer a{color:#F0F5FB}
+body.brand-v5 .footer a:hover,body.brand-v5-preview .footer a:hover{color:#BFD5FF}
+body.brand-v5 .lr-body{font-size:15px;line-height:1.75}
+body.brand-v5 .lr-note{font-size:13px}
+body.brand-v5 .lr-marker:focus-visible,body.brand-v5 .lr-nav button:focus-visible,body.brand-v5 .lr-milestone:focus-visible{outline:3px solid #1D4ED8;outline-offset:3px}
+body.brand-v5 .lr-nav button{min-width:40px;min-height:40px}
+body.brand-v5 .lr-controls button{min-height:44px}
+body.brand-v5 .lr-controls button:disabled{opacity:.5}
+body.brand-v5 .lr-marker{border:2px solid #fff}
+body.brand-v5 .lr-panel{border-color:var(--brand-line)}
+body.brand-v5 .brand-page-illustration img{object-fit:contain}
+body.brand-v5-preview .hp-photo-note{display:none}
+body.brand-v5-preview .hp-personal-visual{min-width:0}
+@media(max-width:760px){body.brand-v5 .lr-marker{min-width:25px;min-height:25px}body.brand-v5 .lr-nav{justify-content:flex-start;gap:8px}body.brand-v5 .lr-nav button{min-width:42px;min-height:42px}body.brand-v5 .lr-body{font-size:15px}body.brand-v5 .brand-page-hero-grid{gap:20px}body.brand-v5-preview .hp-hero-grid{gap:25px}}
+@media(prefers-reduced-motion:reduce){body.brand-v5 *,body.brand-v5-preview *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* v5.1.1 — Stories hero contrast fix: editorial light canvas */
+body.brand-v5.stories-page .sj-hero.brand-stories-hero{background:#F8F6F2;color:#30465D}
+body.brand-v5.stories-page .sj-hero.brand-stories-hero h1{color:#162C46}
+body.brand-v5.stories-page .sj-hero.brand-stories-hero .sj-hero-lead{color:#30465D}
+body.brand-v5.stories-page .sj-hero.brand-stories-hero .eyebrow{color:#48617A}
+body.brand-v5.stories-page .sj-hero.brand-stories-hero .sj-cta{color:#1D4ED8;border-bottom-color:#1D4ED8}
+body.brand-v5.stories-page .sj-hero.brand-stories-hero .sj-cta:hover{color:#162C46;border-bottom-color:#162C46}
+body.brand-v5.stories-page .sj-hero.brand-stories-hero .sj-cta:focus-visible{outline:3px solid #2563EB;outline-offset:5px;border-radius:2px}
