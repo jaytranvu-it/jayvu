@@ -1,4 +1,4 @@
-/* JAY VU. v5.2 — consolidated editorial brand layer. Source: v5.1.1. */
+/* JAY VU. v5.2.1 — audited editorial brand layer. Source: v5.1.1. */
 :root{--brand-ink:#162C46;--brand-body:#30465D;--brand-secondary:#48617A;--brand-ivory:#F8F6F2;--brand-blue:#2563EB;--brand-link:#1D4ED8;--brand-mist:#7899BE;--brand-earth:#AD9270;--brand-line:#D6DFE6;--brand-white:#FFFFFF}
 body.brand-v5,body.brand-v5-preview{background:var(--brand-ivory);color:var(--brand-body)}
 body.brand-v5 :is(h1,h2,h3),body.brand-v5-preview :is(h1,h2,h3){color:var(--brand-ink)}
@@ -29,9 +29,15 @@ body.brand-v5 .footer .copyright,body.brand-v5-preview .footer .copyright{color:
 body.brand-v5 .sj-closing{background:var(--brand-ink);color:#fff}
 body.brand-v5 .sj-closing p{color:#fff}
 body.brand-v5 .sj-closing strong{color:#DCE7F3}
-body.brand-v5-preview .hp-snapshot,body.brand-v5-preview .hp-career{color:#fff}
-body.brand-v5-preview .hp-snapshot h2,body.brand-v5-preview .hp-career h2{color:#fff}
-body.brand-v5-preview .hp-snapshot .hp-label,body.brand-v5-preview .hp-career .hp-label{color:#BFD5FF}
+/* Context-aware color architecture: snapshot is light; career remains dark. */
+body.brand-v5-preview .hp-snapshot{background:#F3F1ED;color:var(--brand-body)}
+body.brand-v5-preview .hp-snapshot h2{color:var(--brand-ink)}
+body.brand-v5-preview .hp-snapshot .hp-label{color:var(--brand-secondary)}
+body.brand-v5-preview .hp-snapshot-chips span{color:var(--brand-ink);border-color:#7899BE;background:rgba(255,255,255,.42)}
+body.brand-v5-preview .hp-career{background:var(--brand-ink);color:#E2EAF1}
+body.brand-v5-preview .hp-career h2,body.brand-v5-preview .hp-career-list strong{color:#fff}
+body.brand-v5-preview .hp-career p,body.brand-v5-preview .hp-career-list small{color:#E2EAF1}
+body.brand-v5-preview .hp-career .hp-label,body.brand-v5-preview .hp-career-list time,body.brand-v5-preview .hp-career .hp-text-link{color:#BFD5FF}
 body.brand-v5-preview .hp-photo :is(span,strong){color:#fff}
 body.brand-v5-preview .hp-photo-note{display:none}
 body.brand-v5-preview .hp-personal-visual{min-width:0}
@@ -62,3 +68,30 @@ body.brand-v5 :is(.lr-nav button,.lr-controls button){min-width:42px;min-height:
 @media(max-width:760px){body.brand-v5 .lr-marker{min-width:25px;min-height:25px}body.brand-v5 .lr-nav{justify-content:flex-start;gap:8px}body.brand-v5 .lr-nav button{min-width:44px;min-height:44px}body.brand-v5 .brand-page-hero-grid{gap:20px}body.brand-v5-preview .hp-hero-grid{gap:25px}body.brand-v5 .sj-hero{padding:60px 0}body.brand-v5 .sj-hero h1{font-size:clamp(2.5rem,9vw,4rem)}}
 @media(max-width:500px){body.brand-v5 .brand-page-illustration{border-radius:12px}body.brand-v5 .brand-stories-bird{width:70px}}
 @media(prefers-reduced-motion:reduce){body.brand-v5 *,body.brand-v5-preview *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* v5.2.1: Explicit text contexts and mobile guardrails. */
+body.brand-v5-preview .hp-snapshot :is(h2,p,strong,small),body.brand-v5-preview .hp-snapshot-chips span{color:var(--brand-ink)}
+body.brand-v5-preview .hp-process :is(h2,h3,.hp-step strong){color:var(--brand-ink)}
+body.brand-v5-preview .hp-process .hp-step small{color:var(--brand-secondary)}
+body.brand-v5-preview .hp-personal :is(h2,h3,.hp-personal-copy blockquote){color:var(--brand-ink)}
+body.brand-v5-preview .hp-personal .hp-personal-copy p{color:var(--brand-body)}
+body.brand-v5-preview .hp-personal .hp-photo :is(span,strong){color:#fff}
+body.brand-v5-preview .hp-impact :is(h2,h3,.hp-metric strong){color:var(--brand-ink)}
+body.brand-v5-preview .hp-impact .hp-metric small{color:var(--brand-secondary)}
+body.brand-v5-preview .hp-story :is(h2,h3){color:var(--brand-ink)}
+body.brand-v5-preview .hp-story p,body.brand-v5-preview .hp-contact p{color:var(--brand-body)}
+body.brand-v5-preview .hp-contact :is(h2,h3){color:var(--brand-ink)}
+body.brand-v5-preview .hp-project :is(h3,strong){color:var(--brand-ink)}
+body.brand-v5-preview .hp-project p,body.brand-v5-preview .hp-project .hp-disclaimer{color:var(--brand-secondary)}
+body.brand-v5-preview .hp-hero .hp-lead{color:var(--brand-body)}
+body.brand-v5-preview .hp-hero :is(h1,h2){color:var(--brand-ink)}
+body.brand-v5 .hero:not(.sj-hero) :is(h1,h2,h3){color:var(--brand-ink)}
+body.brand-v5 .hero:not(.sj-hero) :is(p,.lead){color:var(--brand-body)}
+body.brand-v5 .footer :is(h2,h3,strong),body.brand-v5-preview .footer :is(h2,h3,strong){color:#fff}
+body.brand-v5 .sj-closing :is(h2,h3),body.brand-v5 .sj-closing p{color:#fff}
+body.brand-v5 :is(.card,.lr-panel) :is(h2,h3){color:var(--brand-ink)}
+body.brand-v5 :is(.card,.lr-panel) p{color:var(--brand-body)}
+body.brand-v5-preview .hp-snapshot-chips span{font-size:max(.8125rem,13px);line-height:1.45}
+body.brand-v5-preview .hp-label{font-size:max(.8125rem,13px)}
+body.brand-v5 :is(.btn,.lr-controls button,.lr-nav button),body.brand-v5-preview .btn{touch-action:manipulation}
+@media(max-width:760px){body.brand-v5-preview .hp-snapshot-inner{grid-template-columns:1fr}body.brand-v5-preview .hp-snapshot-chips{gap:8px}body.brand-v5-preview .brand-editorial-band .wrap{flex-wrap:wrap}body.brand-v5 .brand-page-hero-grid{min-width:0}}
